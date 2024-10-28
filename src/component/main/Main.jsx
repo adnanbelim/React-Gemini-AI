@@ -21,7 +21,7 @@ const Main = () => {
                                 <p><span>Hello Dev.</span></p>
                                 <p>How can I help you today?</p>
                             </div>
-                            <div className="cards sm:grid grid-cols-[repeat(auto-fill,minmax(180px,1fr))] gap-4 p-5 hidden">
+                            <div className="cards sm:grid grid-cols-[repeat(auto-fill,minmax(180px,1fr))] gap-4 p-5 mb-2.5 hidden">
                                 <div className="card h-[200px] p-4 border bg-[#f0f4f9] relative cursor-pointer rounded-[10px] hover:bg-[#dfe4ea]">
                                     <p className='text-[#585858] text-lg'>Suggest a beautiful place to see on an upcoming road trip</p>
                                     <img src={assets.compass} alt="" className='w-9 p-1 absolute bg-white rounded-[20px] bottom-[10px] right-[10px]' />
