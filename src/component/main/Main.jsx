@@ -17,24 +17,24 @@ const Main = () => {
                 {
                     !showResults ? 
                         <>
-                            <div className="greet my-4 mx-0 text-6xl text-[#c4c7c5] font-medium p-5">
+                            <div className="greet my-4 mx-0 text-2xl md:4xl lg:text-6xl text-[#c4c7c5] font-medium p-5">
                                 <p><span>Hello Dev.</span></p>
                                 <p>How can I help you today?</p>
                             </div>
-                            <div className="cards sm:grid grid-cols-[repeat(auto-fill,minmax(180px,1fr))] gap-4 p-5 hidden">
-                                <div className="card h-[200px] p-4 border bg-[#f0f4f9] relative cursor-pointer rounded-[10px] hover:bg-[#dfe4ea]">
+                            <div className="cards grid grid-cols-[repeat(auto-fill,minmax(180px,1fr))] gap-4 p-5 sm:max-h-[33vh] max-h-[40vh] overflow-y-scroll">
+                                <div className="card sm:h-[180px] h-[250px]  p-4 border bg-[#f0f4f9] relative cursor-pointer rounded-[10px] text-xs hover:bg-[#dfe4ea]">
                                     <p className='text-[#585858] text-lg'>Suggest a beautiful place to see on an upcoming road trip</p>
                                     <img src={assets.compass} alt="" className='w-9 p-1 absolute bg-white rounded-[20px] bottom-[10px] right-[10px]' />
                                 </div>
-                                <div className="card h-[200px] p-4 border bg-[#f0f4f9] relative cursor-pointer rounded-[10px] hover:bg-[#dfe4ea]">
+                                <div className="card sm:h-[180px] h-[250px]  p-4 border bg-[#f0f4f9] relative cursor-pointer rounded-[10px] text-xs hover:bg-[#dfe4ea]">
                                     <p className='text-[#585858] text-lg'>Suggest a beautiful place to see on an upcoming road trip</p>
                                     <img src={assets.bulb} alt="" className='w-9 p-1 absolute bg-white rounded-[20px] bottom-[10px] right-[10px]' />
                                 </div>
-                                <div className="card h-[200px] p-4 border bg-[#f0f4f9] relative cursor-pointer rounded-[10px] hover:bg-[#dfe4ea]">
+                                <div className="card sm:h-[180px] h-[250px]  p-4 border bg-[#f0f4f9] relative cursor-pointer rounded-[10px] text-xs hover:bg-[#dfe4ea]">
                                     <p className='text-[#585858] text-lg'>Suggest a beautiful place to see on an upcoming road trip</p>
                                     <img src={assets.message} alt="" className='w-9 p-1 absolute bg-white rounded-[20px] bottom-[10px] right-[10px]' />
                                 </div>
-                                <div className="card h-[200px] p-4 border bg-[#f0f4f9] relative cursor-pointer rounded-[10px] hover:bg-[#dfe4ea]">
+                                <div className="card sm:h-[180px] h-[250px]  p-4 border bg-[#f0f4f9] relative cursor-pointer rounded-[10px] text-xs hover:bg-[#dfe4ea]">
                                     <p className='text-[#585858] text-lg'>Suggest a beautiful place to see on an upcoming road trip</p>
                                     <img src={assets.code} alt="" className='w-9 p-1 absolute bg-white rounded-[20px] bottom-[10px] right-[10px]' />
                                 </div>
