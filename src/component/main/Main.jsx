@@ -47,12 +47,18 @@ const Main = () => {
                         </div>
                         <div className="result-data flex items-start gap-5">
                             <img src={assets.gemini} alt="" className='w-10'/>
+                                {loading ? (
+                                    <div className="loader w-full flex flex-col gap-2.5">
+                                        <hr />
+                                        <hr />
+                                        <hr />
+                                    </div>
+                                ) : (
+                                    resultData && (
+                                        <p dangerouslySetInnerHTML={{ __html: resultData }} className='text-base font-normal text-justify'></p>
+                                    )
+                                )}
 
-                                {loading ? <div className="loader w-full flex flex-col gap-2.5">
-                                    <hr />
-                                    <hr />
-                                    <hr />
-                                </div> : <p dangerouslySetInnerHTML={{ __html: resultData }} className='text-base font-normal text-justify'></p>}
 
                             
                         </div>
